@@ -1,134 +1,47 @@
-
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Astrum Vera</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    html, body {
-      height: 100%;
-      font-family: 'Arial', sans-serif;
-      background: url('background.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-      display: flex;
-      flex-direction: column;
-    }
-
-    header {
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: rgba(0, 0, 0, 0.7);
-      border-bottom: 1px solid white;
-    }
-
-    .logo {
-      font-weight: bold;
-      font-size: 1.5rem;
-      text-transform: uppercase;
-    }
-
-    nav {
-      display: flex;
-      gap: 1.5rem;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-size: 1rem;
-    }
-
-    main {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 2rem;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    p {
-      margin-bottom: 2rem;
-      font-size: 1.2rem;
-      opacity: 0.8;
-    }
-
-    .buttons {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .buttons a {
-      background: white;
-      color: black;
-      padding: 0.75rem 1.5rem;
-      border-radius: 4px;
-      font-weight: bold;
-      text-decoration: none;
-      transition: background 0.3s ease;
-    }
-
-    .buttons a:hover {
-      background: #ddd;
-    }
-
-    footer {
-      padding: 1rem;
-      text-align: center;
-      background: rgba(0, 0, 0, 0.7);
-      font-size: 0.9rem;
-    }
-
-    footer a {
-      color: white;
-      text-decoration: none;
-      margin: 0 0.5rem;
-    }
-  </style>
+<meta charset="utf-8"/>
+<title>Astrum Vera</title>
+<link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
+<nav class="menu">
+<a href="#">home</a>
+<a href="#">about</a>
+<a href="#">contact</a>
+<a href="#">privacy</a>
+<a href="#">terms</a>
+</nav>
+<div class="center-content">
+<h1>ASTRUM VERA</h1>
+<p>The true star.<br/>A real-time planetary chart.</p>
+<div class="actions">
+<a class="button" href="#">Download for iOS</a>
+<a class="button" href="#">Download for Android</a>
+<a class="button" href="#">Donate</a>
+</div>
+</div>
+<footer>
+<div style="display: flex; justify-content: center; gap: 2rem; align-items: center; padding: 1rem;">
+<a href="https://instagram.com/astrumvera" target="_blank">
+<img alt="Instagram" src="instagram.svg" style="width: 24px; height: 24px;"/>
+</a>
+<a href="mailto:contact@astrumvera.com">
+<svg fill="#fff" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 13.065L.75 4.5h22.5L12 13.065zm0 2.17L.75 6.67v12.83h22.5V6.67L12 15.235z"></path>
+</svg>
+</a>
+</div>
+<div style="text-align: center; color: white;">
 
-  <header>
-    <div class="logo">Astrum Vera</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="terms.html">Terms</a>
-    </nav>
-  </header>
-
-  <main>
-    <h1>ASTRUM VERA</h1>
-    <p>The true star.<br>A real-time planetary chart.</p>
-    <div class="buttons">
-      <a href="#">Download for iOS</a>
-      <a href="#">Download for Android</a>
-      <a href="#">Donate</a>
-    </div>
-  </main>
-
-  <footer>
-    <div>
-      <a href="#"><img src="instagram-icon.svg" alt="Instagram" style="height:20px;"></a>
-      <a href="#"><img src="mail-icon.svg" alt="Email" style="height:20px;"></a>
-    </div>
-    <p>© 2025 CROWNED BY SILENCE. ALL RIGHTS RESERVED.</p>
-    <div><a href="privacy.html">POLICY</a> · <a href="terms.html">TERMS</a></div>
-  </footer>
-
+<p style="font-size: 0.75rem; margin: 0;">© 2025 CROWNED BY SILENCE. ALL RIGHTS RESERVED.</p>
+<div style="margin-top: 0.5rem;">
+<a href="privacy.html" style="font-size: 0.75rem; color: white; margin-right: 10px;">POLICY</a>
+<a href="terms.html" style="font-size: 0.75rem; color: white;">TERMS</a>
+</div>
+</div>
+</footer>
 </body>
 </html>
