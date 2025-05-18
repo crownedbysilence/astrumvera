@@ -5,9 +5,13 @@
   <title>Astrum Vera</title>
   <link href="styles.css" rel="stylesheet"/>
   <style>
-    body {
+    html, body {
+      height: 100%;
       margin: 0;
       padding: 0;
+      display: flex;
+      flex-direction: column;
+      background-color: black;
     }
 
     header {
@@ -18,12 +22,14 @@
     }
 
     .site-content {
+      flex: 1;
       padding: 60px 40px;
       text-align: center;
     }
 
     footer {
-      margin-top: 60px;
+      margin-top: 40px;
+      margin-bottom: 20px;
     }
   </style>
 </head>
