@@ -1,86 +1,19 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Astrum Vera</title>
-  <link href="styles.css" rel="stylesheet" />
-  <style>
-    @font-face {
-      font-family: 'AstrumVeraFont';
-      src: url('AstrumVeraFont.ttf') format('truetype');
-    }
-
-    body, h1, h2, h3, h4, h5, h6, p, a, nav, footer, header, button {
-      font-family: 'AstrumVeraFont', serif;
-    }
-
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      background: transparent;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 999;
-    }
-
-    .home-logo {
-      font-size: 1.25rem;
-      color: white;
-      text-decoration: none;
-    }
-
-    .menu {
-      display: flex;
-      gap: 2rem;
-    }
-
-    .menu a {
-      color: white;
-      text-transform: uppercase;
-      font-size: 0.85rem;
-      text-decoration: none;
-    }
-
-    .hamburger {
-      display: none;
-      font-size: 1.5rem;
-      color: white;
-      background: none;
-      border: none;
-    }
-
-    @media (max-width: 768px) {
-      .menu {
-        display: none;
-        flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.9);
-        position: absolute;
-        top: 100%;
-        right: 0;
-        width: 200px;
-        padding: 1rem;
-      }
-
-      .menu.show {
-        display: flex;
-      }
-
-      .hamburger {
-        display: block;
-      }
-    }
-  </style>
+<meta charset="utf-8"/>
+<title>Astrum Vera</title>
+<link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
 
 <header>
   <nav class="navbar">
-    <a class="home-logo" href="index.html">ASTRUM VERA</a>
-    <div class="menu" id="menu">
+    <div class="navbar-left">
+      <a href="index.html" class="home-link">ASTRUM VERA</a>
+    </div>
+    <div class="navbar-right" id="menu">
       <a href="index.html">HOME</a>
       <a href="index.html#about">ABOUT</a>
       <a href="index.html#contact">CONTACT</a>
@@ -91,13 +24,43 @@
   </nav>
 </header>
 
+
+<div class="center-content">
+<h1>ASTRUM VERA</h1>
+<p>The true star.<br/>A real-time planetary chart.</p>
+<div class="actions">
+<a class="button" href="#">Download for iOS</a>
+<a class="button" href="#">Download for Android</a>
+<a class="button" href="#">Donate</a>
+</div>
+</div>
+
+ 
+<footer>
+  <div style="display: flex; justify-content: center; gap: 2rem; align-items: center; padding: 1rem;">
+    <a href="https://instagram.com/astrumvera" target="_blank">
+      <img src="instagram.svg" alt="Instagram" style="width: 24px; height: 24px;">
+    </a>
+    <a href="mailto:contact@astrumvera.com">
+      <img src="email-icon.svg" alt="Email" style="width: 24px; height: 24px;">
+    </a>
+  </div>
+  <div style="text-align: center; color: white;">
+    <p style="font-size: 0.75rem; margin: 0;">© 2025 ASTRUM VERA. ALL RIGHTS RESERVED.</p>
+    <div style="margin-top: 0.5rem;">
+      <a href="privacy.html" style="font-size: 0.75rem; color: white; margin-right: 10px;">POLICY</a>
+      <a href="terms.html" style="font-size: 0.75rem; color: white;">TERMS</a>
+    </div>
+  </div>
+</footer>
 <script>
   const hamburger = document.getElementById('hamburger');
   const menu = document.getElementById('menu');
-  hamburger.addEventListener('click', () => {
+  hamburger.addEventListener('click', () => {{
     menu.classList.toggle('show');
-  });
+  }});
 </script>
+
 
 </body>
 </html>
