@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: 'AstrumVeraFont';
   src: url('./AstrumVeraFont.ttf') format('truetype');
@@ -56,18 +57,17 @@ p {
   font-weight: bold;
 }
 
-
 footer {
   position: relative;
   text-align: center;
   margin-top: 100px;
 }
+
 .footer-content .icon {
   width: 24px;
   margin: 0 10px;
   filter: invert(1);
 }
-
 
 .hamburger {
   display: none;
@@ -77,57 +77,29 @@ footer {
   top: 20px;
   right: 20px;
 }
-.nav-menu {
+
+.navbar {
   display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-bottom: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
 }
-.nav-menu a {
+
+.navbar-left {
+  font-family: 'AstrumVeraFont', serif;
+  font-size: 1.2rem;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-right a {
   color: white;
   text-decoration: none;
+  text-transform: uppercase;
   font-size: 14px;
-}
-@media (max-width: 768px) {
-  .nav-menu {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    background: rgba(0,0,0,0.8);
-    padding: 20px;
-  }
-  .nav-menu.active {
-    display: flex;
-  }
-  .hamburger {
-    display: block;
-  }
-}
-
-nav a {
-    text-transform: uppercase;
-}
-
-/* Ensure body uses the main font */
-body {
-    font-family: 'Alternative Calvin Klein', sans-serif;
-}
-
-
-/* Universal font */
-body, h1, h2, h3, h4, h5, h6, nav a, footer, .home-link {
-  font-family: 'AstrumVeraFont', serif;
-}
-
-/* Hamburger hidden on desktop, shown on mobile */
-.hamburger {
-  display: none;
-  font-size: 2rem;
-  background: none;
-  color: white;
-  border: none;
-  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -139,6 +111,7 @@ body, h1, h2, h3, h4, h5, h6, nav a, footer, .home-link {
     right: 1rem;
     top: 3.5rem;
     padding: 1rem;
+    z-index: 1000;
   }
 
   .navbar-right.show {
