@@ -4,13 +4,11 @@
   src: url('./AstrumVeraFont.ttf') format('truetype');
 }
 
-/* Black background for entire browser space */
 html {
   height: 100%;
   background-color: black;
 }
 
-/* Flex layout to push footer down and allow clean spacing */
 body {
   margin: 0;
   padding: 0;
@@ -23,7 +21,6 @@ body {
   flex-direction: column;
 }
 
-/* Main site content should expand to fill vertical space */
 .site-content {
   flex: 1;
 }
