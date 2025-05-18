@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,39 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Astrum Vera</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     html, body {
       height: 100%;
-      font-family: Arial, sans-serif;
-      background: black;
+      font-family: 'Arial', sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: white;
       display: flex;
       flex-direction: column;
     }
 
     header {
+      padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1rem 2rem;
-      background: black;
+      background: rgba(0, 0, 0, 0.7);
       border-bottom: 1px solid white;
     }
 
     .logo {
-      font-size: 1.5rem;
       font-weight: bold;
+      font-size: 1.5rem;
       text-transform: uppercase;
     }
 
     nav {
       display: flex;
-      gap: 1rem;
+      gap: 1.5rem;
     }
 
     nav a {
@@ -46,76 +44,59 @@
       font-size: 1rem;
     }
 
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      cursor: pointer;
-    }
-
-    .hamburger div {
-      width: 25px;
-      height: 3px;
-      background: white;
-      margin: 4px 0;
-    }
-
-    @media (max-width: 768px) {
-      nav {
-        display: none;
-        flex-direction: column;
-        background: black;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 100%;
-        text-align: center;
-        padding: 1rem 0;
-      }
-
-      nav.active {
-        display: flex;
-      }
-
-      .hamburger {
-        display: flex;
-      }
-    }
-
     main {
       flex: 1;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      padding: 2rem;
+      justify-content: center;
       text-align: center;
+      padding: 2rem;
     }
 
     h1 {
       font-size: 2.5rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 2rem;
+      font-size: 1.2rem;
+      opacity: 0.8;
     }
 
     .buttons {
       display: flex;
-      flex-direction: column;
       gap: 1rem;
-      margin-top: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     .buttons a {
-      padding: 0.75rem 1.5rem;
       background: white;
       color: black;
-      text-decoration: none;
+      padding: 0.75rem 1.5rem;
       border-radius: 4px;
       font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .buttons a:hover {
+      background: #ddd;
     }
 
     footer {
       padding: 1rem;
       text-align: center;
-      border-top: 1px solid white;
+      background: rgba(0, 0, 0, 0.7);
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 0.5rem;
     }
   </style>
 </head>
@@ -123,10 +104,7 @@
 
   <header>
     <div class="logo">Astrum Vera</div>
-    <div class="hamburger" onclick="toggleMenu()">
-      <div></div><div></div><div></div>
-    </div>
-    <nav id="nav">
+    <nav>
       <a href="index.html">Home</a>
       <a href="privacy.html">Privacy</a>
       <a href="terms.html">Terms</a>
@@ -134,22 +112,23 @@
   </header>
 
   <main>
-    <h1>Welcome to Astrum Vera</h1>
+    <h1>ASTRUM VERA</h1>
+    <p>The true star.<br>A real-time planetary chart.</p>
     <div class="buttons">
-      <a href="#">Download App</a>
+      <a href="#">Download for iOS</a>
+      <a href="#">Download for Android</a>
       <a href="#">Donate</a>
     </div>
   </main>
 
   <footer>
-    &copy; 2025 Astrum Vera. All rights reserved.
+    <div>
+      <a href="#"><img src="instagram-icon.svg" alt="Instagram" style="height:20px;"></a>
+      <a href="#"><img src="mail-icon.svg" alt="Email" style="height:20px;"></a>
+    </div>
+    <p>© 2025 CROWNED BY SILENCE. ALL RIGHTS RESERVED.</p>
+    <div><a href="privacy.html">POLICY</a> · <a href="terms.html">TERMS</a></div>
   </footer>
-
-  <script>
-    function toggleMenu() {
-      document.getElementById("nav").classList.toggle("active");
-    }
-  </script>
 
 </body>
 </html>
