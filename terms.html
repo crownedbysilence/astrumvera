@@ -1,97 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
+  <meta charset="UTF-8">
   <title>Terms & Conditions | Astrum Vera</title>
-  <link href="styles.css" rel="stylesheet"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<div class="hamburger" onclick="toggleMenu()">☰</div>
+<nav id="navMenu" class="nav-menu">
+  <a href="index.html">Home</a>
+  <a href="index.html#about">About</a>
+  <a href="privacy.html">Privacy</a>
+  <a href="terms.html">Terms</a>
+  <a href="index.html#contact">Contact</a>
+</nav>
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById("navMenu");
+    menu.classList.toggle("active");
+  }
+</script>
 
-<header>
-  <nav class="navbar">
-    <div class="navbar-left">
-      <a href="index.html" class="home-link">ASTRUM VERA</a>
-    </div>
-    <div class="navbar-right" id="menu">
-      <a href="index.html">HOME</a>
-      <a href="index.html#about">ABOUT</a>
-      <a href="index.html#contact">CONTACT</a>
-      <a href="privacy.html">POLICY</a>
-      <a href="terms.html">TERMS</a>
-    </div>
-    <button class="hamburger" id="hamburger">☰</button>
+  <nav class="menu">
+    <a href="#">home</a>
+    <a href="#">about</a>
+    <a href="#">contact</a>
+    <a href="#">privacy</a>
+    <a href="#">terms</a>
   </nav>
-</header>
 
+  <div class="center-content">
+    <h1>ASTRUM VERA</h1>
+    <p>The true star.<br>A real-time planetary chart.</p>
 
-<main style="padding: 4rem 2rem; max-width: 800px; margin: auto; color: white; text-align: center;">
-  <h1 style="font-size: 2rem; margin-bottom: 1rem;">Terms & Conditions</h1>
-  <p>
-    By using Astrum Vera, you agree to the following terms and conditions. Please read them carefully.
-  </p>
-
-  <h2>Usage</h2>
-  <p>
-    Astrum Vera is intended for personal and non-commercial use. Any misuse, redistribution, or modification without permission is prohibited.
-  </p>
-
-  <h2>Content</h2>
-  <p>
-    All content is for informational purposes only and should not be considered professional or legal advice.
-  </p>
-
-  <h2>Availability</h2>
-  <p>
-    We reserve the right to modify or discontinue access to the app or website at any time without prior notice.
-  </p>
-
-  <h2>Liability</h2>
-  <p>
-    Astrum Vera is not liable for any direct or indirect damages arising from the use of our services.
-  </p>
-
-  <h2>Contact</h2>
-  <p>
-    For any questions regarding these terms, please contact <a href="mailto:contact@astrumvera.com" style="color: white;">contact@astrumvera.com</a>.
-  </p>
-</main>
-
+    <div class="actions">
+      <a href="#" class="button">Download for iOS</a>
+      <a href="#" class="button">Download for Android</a>
+      <a href="#" class="button">Donate</a>
+    </div>
+  </div>
 
 <footer>
-  <div style="display: flex; justify-content: center; gap: 2rem; align-items: center; padding: 1rem;">
+  <div class="footer-content">
     <a href="https://instagram.com/astrumvera" target="_blank">
-      <img src="instagram.svg" alt="Instagram" style="width: 24px; height: 24px;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="icon">
     </a>
-    <a href="mailto:contact@astrumvera.com">
-      <img src="email-icon.svg" alt="Email" style="width: 24px; height: 24px;">
+    <a href="mailto:crownedbysilence@gmail.com">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email" class="icon">
     </a>
-  </div>
-  <div style="text-align: center; color: white;">
-    <p style="font-size: 0.75rem; margin: 0;">© 2025 ASTRUM VERA. ALL RIGHTS RESERVED.</p>
-    <div style="margin-top: 0.5rem;">
-      <a href="privacy.html" style="font-size: 0.75rem; color: white; margin-right: 10px;">POLICY</a>
-      <a href="terms.html" style="font-size: 0.75rem; color: white;">TERMS</a>
-    </div>
   </div>
 </footer>
-<script>
-  const hamburger = document.getElementById('hamburger');
-  const menu = document.getElementById('menu');
-  hamburger.addEventListener('click', () => {{
-    menu.classList.toggle('show');
-  }});
-</script>
-
-
-<script>
-  const hamburger = document.getElementById('hamburger');
-  const menu = document.getElementById('menu');
-  hamburger.addEventListener('click', () => {
-    menu.classList.toggle('show');
-  });
-</script>
 
 </body>
 </html>
