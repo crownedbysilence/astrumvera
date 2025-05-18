@@ -73,3 +73,27 @@ footer {
   margin-bottom: 20px;
   text-align: center;
 }
+
+
+header .logo {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+footer {
+  margin-bottom: 30px;
+  text-align: center;
+}
