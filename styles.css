@@ -1,1 +1,115 @@
-/* includes Didot or similar font, responsive styles, fixed link colors */
+@font-face {
+  font-family: 'AstrumVeraFont';
+  src: url('./AstrumVeraFont.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url('./bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'AstrumVeraFont', serif;
+  color: white;
+}
+
+.menu {
+  text-align: center;
+  padding: 30px 0 0;
+  font-size: 16px;
+}
+
+.menu a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.center-content {
+  text-align: center;
+  margin-top: 180px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.actions {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.button {
+  display: inline-block;
+  background: white;
+  color: black;
+  text-decoration: none;
+  padding: 12px 24px;
+  margin: 12px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+
+footer {
+  position: relative;
+  text-align: center;
+  margin-top: 100px;
+}
+.footer-content .icon {
+  width: 24px;
+  margin: 0 10px;
+  filter: invert(1);
+}
+
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: rgba(0,0,0,0.8);
+    padding: 20px;
+  }
+  .nav-menu.active {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
+nav a {
+    text-transform: uppercase;
+}
+
+/* Ensure body uses the main font */
+body {
+    font-family: 'Alternative Calvin Klein', sans-serif;
+}
