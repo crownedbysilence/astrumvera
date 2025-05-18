@@ -3,13 +3,21 @@
   src: url('./AstrumVeraFont.ttf') format('truetype');
 }
 
+html {
+  height: 100%;
+  background-color: black; /* Ensures full black beyond background image */
+}
+
 body {
   margin: 0;
   padding: 0;
+  min-height: 100%;
   background: url('./bg.jpg') no-repeat center center fixed;
   background-size: cover;
   font-family: 'AstrumVeraFont', serif;
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .menu {
@@ -54,4 +62,9 @@ p {
   margin: 12px;
   border-radius: 5px;
   font-weight: bold;
+}
+
+footer {
+  margin-bottom: 20px; /* Adds space above bottom edge */
+  text-align: center;
 }
