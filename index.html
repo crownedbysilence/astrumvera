@@ -4,28 +4,42 @@
   <meta charset="UTF-8">
   <title>Astrum Vera</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .site-content {
+      flex: 1;
+    }
+  </style>
 </head>
 <body>
-  <nav class="menu">
-    <a href="#">home</a>
-    <a href="#">about</a>
-    <a href="#">contact</a>
-    <a href="#">privacy</a>
-    <a href="#">terms</a>
-  </nav>
 
-  <div class="center-content">
-    <h1>ASTRUM VERA</h1>
-    <p>The true star.<br>A real-time planetary chart.</p>
+  <div class="site-content">
+    <nav class="menu">
+      <a href="#">home</a>
+      <a href="#">about</a>
+      <a href="#">contact</a>
+      <a href="privacy.html">privacy</a>
+      <a href="terms.html">terms</a>
+    </nav>
 
-    <div class="actions">
-      <a href="#" class="button">Download for iOS</a>
-      <a href="#" class="button">Download for Android</a>
-      <a href="#" class="button">Donate</a>
+    <div class="center-content">
+      <h1>ASTRUM VERA</h1>
+      <p>The true star.<br>A real-time planetary chart.</p>
+
+      <div class="actions">
+        <a href="#" class="button">Download for iOS</a>
+        <a href="#" class="button">Download for Android</a>
+        <a href="#" class="button">Donate</a>
+      </div>
     </div>
   </div>
 
- <footer>
+  <footer>
     <div style="display: flex; justify-content: center; gap: 2rem; align-items: center; padding: 1rem;">
       <a href="https://instagram.com/astrumvera" target="_blank">
         <img src="instagram.svg" alt="Instagram" style="width: 24px; height: 24px;">
@@ -37,7 +51,6 @@
       </a>
     </div>
     <div style="text-align: center; color: white;">
-        </a>
       <p style="font-size: 0.75rem; margin: 0;">© 2025 CROWNED BY SILENCE. ALL RIGHTS RESERVED.</p>
       <div style="margin-top: 0.5rem;">
         <a href="privacy.html" style="font-size: 0.75rem; color: white; margin-right: 10px;">POLICY</a>
@@ -45,6 +58,6 @@
       </div>
     </div>
   </footer>
-  
+
 </body>
 </html>
