@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: 'AstrumVeraFont';
   src: url('./AstrumVeraFont.ttf') format('truetype');
@@ -55,70 +54,4 @@ p {
   margin: 12px;
   border-radius: 5px;
   font-weight: bold;
-}
-
-footer {
-  position: relative;
-  text-align: center;
-  margin-top: 100px;
-}
-
-.footer-content .icon {
-  width: 24px;
-  margin: 0 10px;
-  filter: invert(1);
-}
-
-.hamburger {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-}
-
-.navbar-left {
-  font-family: 'AstrumVeraFont', serif;
-  font-size: 1.2rem;
-}
-
-.navbar-right {
-  display: flex;
-  gap: 2rem;
-}
-
-.navbar-right a {
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-@media (max-width: 768px) {
-  .navbar-right {
-    display: none;
-    flex-direction: column;
-    background: rgba(0, 0, 0, 0.9);
-    position: absolute;
-    right: 1rem;
-    top: 3.5rem;
-    padding: 1rem;
-    z-index: 1000;
-  }
-
-  .navbar-right.show {
-    display: flex;
-  }
-
-  .hamburger {
-    display: block;
-  }
 }
