@@ -4,17 +4,87 @@
   <meta charset="UTF-8">
   <title>Astrum Vera</title>
   <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      z-index: 1000;
+    }
+
+    .logo {
+      color: white;
+      text-decoration: none;
+      letter-spacing: 2px;
+    }
+
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      height: 2px;
+      width: 25px;
+      background: #ffffff;
+      margin: 4px 0;
+    }
+
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background: #111;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 100%;
+      text-align: right;
+      padding: 1rem;
+    }
+
+    .nav-links.active {
+      display: flex;
+    }
+
+    .nav-links a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      margin: 0.5rem 0;
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+  </style>
 </head>
 <body>
-  <nav class="menu">
-    <a href="#">home</a>
-    <a href="#">about</a>
-    <a href="#">contact</a>
-    <a href="#">privacy</a>
-    <a href="#">terms</a>
+
+  <nav>
+    <a class="logo" href="index.html" style="font-size: 0.9rem;">ASTRUM VERA</a>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html">HOME</a>
+      <a href="index.html#about">ABOUT</a>
+      <a href="index.html#contact">CONTACT</a>
+      <a href="privacy.html">POLICY</a>
+      <a href="terms.html">TERMS</a>
+    </div>
   </nav>
 
-  <div class="center-content">
+  <div class="center-content" style="margin-top: 120px; text-align: center;">
     <h1>ASTRUM VERA</h1>
     <p>The true star.<br>A real-time planetary chart.</p>
 
@@ -25,7 +95,7 @@
     </div>
   </div>
 
- <footer>
+  <footer>
     <div style="display: flex; justify-content: center; gap: 2rem; align-items: center; padding: 1rem;">
       <a href="https://instagram.com/astrumvera" target="_blank">
         <img src="instagram.svg" alt="Instagram" style="width: 24px; height: 24px;">
@@ -37,14 +107,20 @@
       </a>
     </div>
     <div style="text-align: center; color: white;">
-        </a>
-      <p style="font-size: 0.75rem; margin: 0;">© 2025 CROWNED BY SILENCE. ALL RIGHTS RESERVED.</p>
+      <p style="font-size: 0.75rem; margin: 0;">© 2025 ASTRUM VERA. ALL RIGHTS RESERVED.</p>
       <div style="margin-top: 0.5rem;">
         <a href="privacy.html" style="font-size: 0.75rem; color: white; margin-right: 10px;">POLICY</a>
         <a href="terms.html" style="font-size: 0.75rem; color: white;">TERMS</a>
       </div>
     </div>
   </footer>
-  
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('nav-links');
+      nav.classList.toggle('active');
+    }
+  </script>
+
 </body>
 </html>
