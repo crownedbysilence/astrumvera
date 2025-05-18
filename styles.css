@@ -104,12 +104,3 @@ footer {
     display: block;
   }
 }
-
-nav a {
-    text-transform: uppercase;
-}
-
-/* Ensure body uses the main font */
-body {
-    font-family: 'Alternative Calvin Klein', sans-serif;
-}
