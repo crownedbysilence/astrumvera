@@ -104,3 +104,48 @@ footer {
     display: block;
   }
 }
+
+nav a {
+    text-transform: uppercase;
+}
+
+/* Ensure body uses the main font */
+body {
+    font-family: 'Alternative Calvin Klein', sans-serif;
+}
+
+
+/* Universal font */
+body, h1, h2, h3, h4, h5, h6, nav a, footer, .home-link {
+  font-family: 'AstrumVeraFont', serif;
+}
+
+/* Hamburger hidden on desktop, shown on mobile */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar-right {
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    right: 1rem;
+    top: 3.5rem;
+    padding: 1rem;
+  }
+
+  .navbar-right.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
