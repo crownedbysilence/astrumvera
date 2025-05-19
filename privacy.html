@@ -4,65 +4,61 @@
   <meta charset="utf-8"/>
   <title>Privacy Policy | Astrum Vera</title>
   <link href="styles.css" rel="stylesheet"/>
-</head>
-<body style="margin: 0; padding: 0; min-height: 100vh; display: flex; flex-direction: column; background-color: black; color: white;">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      background-color: black;
+    }
 
-  <header style="display: flex; justify-content: space-between; align-items: center; padding: 30px 40px;">
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 40px;
+    }
+
+    .site-content {
+      flex: 1;
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    footer {
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
     <a class="logo" href="index.html" style="font-size: 18px; font-weight: bold; text-transform: uppercase; color: white; text-decoration: none;">ASTRUM VERA</a>
     <nav class="menu">
-      <a href="#" style="color: white; margin-left: 15px; font-size: 6px;">about</a>
-      <a href="#" style="color: white; margin-left: 15px; font-size: 6px;">contact</a>
-      <a href="privacy.html" style="color: white; margin-left: 15px; font-size: 6px;">privacy</a>
-      <a href="terms.html" style="color: white; margin-left: 15px; font-size: 6px;">terms</a>
+      <a href="#">about</a>
+      <a href="#">contact</a>
+      <a href="privacy.html">privacy</a>
+      <a href="terms.html">terms</a>
     </nav>
   </header>
 
-  <div style="flex: 1; padding: 20px 40px; text-align: left; font-size: 6px; line-height: 1.05; max-height: 100vh; overflow: hidden;">
-    <p style="text-align: center; font-size: 6px;"><strong>Privacy Policy</strong></p>
-    <p style="font-size: 6px;"><strong>Effective Date:</strong> May 2025</p>
+  <div class="site-content">
+    <div class="center-content">
+      <h1>ASTRUM VERA</h1>
+      <p>The true star.<br/>A real-time planetary chart.</p>
 
-    <p style="font-size: 6px;">This Privacy Policy outlines how Astrum Vera (“we”, “our”, or “us”) collects, uses, protects, and discloses personal data from users of our services and website.</p>
-
-    <p style="font-size: 6px;"><strong>1. Information We Collect</strong><br>
-    We may collect personal information that you provide voluntarily, such as your name, email address, and messages. We also collect technical data automatically (e.g., browser type, IP address, device identifiers, cookies, and site usage data).</p>
-
-    <p style="font-size: 6px;"><strong>2. How We Use Information</strong><br>
-    We use collected data to:<br>
-    • Provide and maintain our services<br>
-    • Respond to inquiries or user support<br>
-    • Send updates or marketing (only with your explicit consent)<br>
-    • Analyze and improve website performance<br>
-    • Comply with legal obligations</p>
-
-    <p style="font-size: 6px;"><strong>3. Cookies & Tracking</strong><br>
-    We use cookies and analytics tools to understand usage patterns, personalize experiences, and improve functionality. You may disable cookies in your browser settings.</p>
-
-    <p style="font-size: 6px;"><strong>4. Third-Party Services</strong><br>
-    We use third-party platforms (e.g., hosting, analytics, email systems) to perform necessary functions. These providers are contractually bound to protect your data and may only use it as instructed by us.</p>
-
-    <p style="font-size: 6px;"><strong>5. Legal Basis (GDPR)</strong><br>
-    We rely on consent, contract performance, legal obligation, and legitimate interest as lawful bases under GDPR for processing your data.</p>
-
-    <p style="font-size: 6px;"><strong>6. Data Rights</strong><br>
-    You may request access, correction, restriction, or deletion of your personal data at any time. EU and California users may exercise additional rights under GDPR or CCPA.</p>
-
-    <p style="font-size: 6px;"><strong>7. Data Security</strong><br>
-    We implement industry-standard safeguards to secure your data from unauthorized access or misuse. However, no system can guarantee absolute security.</p>
-
-    <p style="font-size: 6px;"><strong>8. Data Retention</strong><br>
-    Your data is retained only as long as necessary to fulfill legal and operational purposes. It will be securely deleted when no longer required.</p>
-
-    <p style="font-size: 6px;"><strong>9. Minors</strong><br>
-    We do not knowingly collect information from individuals under the age of 13. If we become aware of such data, we will delete it immediately.</p>
-
-    <p style="font-size: 6px;"><strong>10. Updates</strong><br>
-    This policy may be modified at any time. Any changes will be posted here with an updated effective date.</p>
-
-    <p style="font-size: 6px;"><strong>11. Contact</strong><br>
-    For privacy-related concerns, contact us at <a href="mailto:contact@astrumvera.com" style="color: white; font-size: 6px;">contact@astrumvera.com</a>.</p>
+      <div class="actions" style="margin-top: 40px;">
+        <a class="button" href="#">Download for iOS</a>
+        <a class="button" href="#">Download for Android</a>
+        <a class="button" href="#">Donate</a>
+      </div>
+    </div>
   </div>
 
-  <footer style="margin-top: 40px; margin-bottom: 20px;">
+  <footer>
     <div style="display: flex; justify-content: center; gap: 2rem; align-items: center; padding: 1rem;">
       <a href="https://instagram.com/astrumvera" target="_blank">
         <img alt="Instagram" src="instagram.svg" style="width: 24px; height: 24px;"/>
@@ -74,10 +70,10 @@
       </a>
     </div>
     <div style="text-align: center; color: white;">
-      <p style="font-size: 6px; margin: 0;">© 2025 CROWNED BY SILENCE. ALL RIGHTS RESERVED.</p>
+      <p style="font-size: 0.75rem; margin: 0;">© 2025 CROWNED BY SILENCE. ALL RIGHTS RESERVED.</p>
       <div style="margin-top: 0.5rem;">
-        <a href="privacy.html" style="font-size: 6px; color: white; margin-right: 10px;">POLICY</a>
-        <a href="terms.html" style="font-size: 6px; color: white;">TERMS</a>
+        <a href="privacy.html" style="font-size: 0.75rem; color: white; margin-right: 10px;">POLICY</a>
+        <a href="terms.html" style="font-size: 0.75rem; color: white;">TERMS</a>
       </div>
     </div>
   </footer>
