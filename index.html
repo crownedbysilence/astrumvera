@@ -2,34 +2,178 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
-  <title>Astrum Vera</title>
-  <link href="styles.css" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#000000"/>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+  <title>CROWNED BY SILENCE — A Dark Fine Art Project</title>
+  <meta name="description" content="Museum-quality fine art photography prints for luxury interiors, collectors, designers, stylists, galleries, and creative spaces. Discover dark, gothic, and emotionally powerful wall art for modern homes.">
+  <meta name="keywords" content="limited edition art prints, fine art photography for collectors, black and white wall art for sale, art for luxury homes, art for interior designers, gothic wall art for home, dark academia wall art, museum quality fine art prints, art for modern homes, art for gallery walls, art for stylists and designers, art for fashion shoots, art for contemporary art galleries, collectible photography prints, emerging fine art photographers, emotional photography wall art, art for home decor trends 2025">
+  <meta property="og:title" content="Crowned By Silence — A Dark Fine Art Project"/>
+  <meta property="og:description" content="Dark fine art. Symbolic. Silent. Rare."/>
+  <meta property="og:url" content="https://www.crownedbysilence.com/"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://www.crownedbysilence.com/"/>
+  <link rel="stylesheet" href="style.css"/>
   <style>
-    html, body {
-      height: 100%;
+    body {
       margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      background-color: black;
+      font-family: 'Alternative Calvin Klein', sans-serif;
+      color: #ffffff;
+      background: url('bg.png') no-repeat center center fixed;
+      background-size: cover;
+      scroll-behavior: smooth;
     }
 
-    header {
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.8);
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 30px 40px;
+      padding: 1rem 2rem;
+      z-index: 1000;
     }
 
-    .site-content {
-      flex-grow: 1;
-      padding: 60px 40px;
+    .logo {
+      font-weight: normal;
+      letter-spacing: 2px;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: #ffffff;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 2rem;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: normal;
+      letter-spacing: 2px;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1rem;
+      color: #ffffff;
+      margin: 0;
+    }
+
+    .project-subtitle {
+      font-size: 0.85rem;
+      color: #ffffff;
+      margin-top: 0.5rem;
+      font-weight: normal;
+    }
+
+    .portfolio {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      padding: 4rem 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .portfolio {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .portfolio img {
+      width: 100%;
+      height: auto;
+      pointer-events: none;
+      user-select: none;
+      -webkit-user-drag: none;
+      border-radius: 4px;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    section p {
+      font-size: 1rem;
+      color: #ffffff;
+      max-width: 600px;
+      margin: 0 auto;
     }
 
     footer {
-      margin-bottom: 20px;
+      background: transparent;
+      padding: 2rem 1rem;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      height: 2px;
+      width: 25px;
+      background: #ffffff;
+      margin: 4px 0;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #111;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        text-align: right;
+        padding: 1rem;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
     }
   </style>
+
+  <title>Astrum Vera</title>
+  <link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
 
