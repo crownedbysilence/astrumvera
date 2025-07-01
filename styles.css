@@ -2,7 +2,6 @@
 @font-face {
   font-family: 'AstrumVeraFont';
   src: url('./AstrumVeraFont.ttf') format('truetype');
-  unicode-range: U+0000-0025, U+0027-FFFF; /* Excludes U+0026 (ampersand) */
 }
 
 html {
