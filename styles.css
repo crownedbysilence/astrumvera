@@ -13,12 +13,24 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100%;
-  background: url('./bg.jpg') no-repeat center center fixed;
-  background-size: cover;
+  background-color: black;
   font-family: 'AstrumVeraFont', serif;
   color: white;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('./bg.jpg') no-repeat center center;
+  background-size: cover;
+  z-index: -1;
 }
 
 .site-content {
@@ -38,9 +50,26 @@ body {
   font-weight: 500;
 }
 
+@media (max-width: 768px) {
+  .menu {
+    padding: 15px 0 0;
+  }
+  
+  .menu a {
+    margin: 0 10px;
+    font-size: 14px;
+  }
+}
+
 .center-content {
   text-align: center;
   margin-top: 180px;
+}
+
+@media (max-width: 768px) {
+  .center-content {
+    margin-top: 40px;
+  }
 }
 
 h1 {

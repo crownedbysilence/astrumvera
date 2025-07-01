@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Terms & Conditions | Astrum Vera</title>
   <link href="styles.css" rel="stylesheet"/>
   <style>
@@ -18,18 +19,29 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 30px 40px;
+      padding: 20px;
     }
 
     .site-content {
       flex: 1;
-      padding: 60px 40px;
+      padding: 40px 20px;
       text-align: center;
     }
 
     footer {
       margin-top: 40px;
       margin-bottom: 20px;
+    }
+    
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+      
+      .site-content {
+        padding: 20px;
+      }
     }
   </style>
 </head>

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Astrum Vera</title>
   <link href="styles.css" rel="stylesheet"/>
   <style>
@@ -18,16 +19,50 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 30px 40px;
+      padding: 20px;
     }
 
     .site-content {
       flex-grow: 1;
-      padding: 60px 40px;
+      padding: 40px 20px;
     }
 
     footer {
       margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+      
+      .site-content {
+        padding: 20px;
+      }
+      
+      .center-content {
+        margin-top: 20px;
+      }
+      
+      h1 {
+        font-size: 28px;
+      }
+      
+      p {
+        font-size: 16px;
+      }
+      
+      .actions {
+        margin-top: 40px;
+      }
+      
+      .actions a {
+        display: block;
+        width: 80%;
+        max-width: 280px;
+        margin: 8px auto;
+      }
     }
   </style>
 </head>
@@ -47,9 +82,9 @@
       <p style="color: white;">The true star.<br/>A real-time planetary chart.</p>
 
       <div class="actions" style="margin-top: 80px;">
-        <a href="#" style="display:inline-block; background:transparent; color:white; text-decoration:none; padding:12px 24px; margin:12px; border-radius:5px; font-weight:bold; border:2px solid white;">Download for iOS</a>
-        <a href="#" style="display:inline-block; background:transparent; color:white; text-decoration:none; padding:12px 24px; margin:12px; border-radius:5px; font-weight:bold; border:2px solid white;">Download for Android</a>
-        <a href="#" style="display:inline-block; background:transparent; color:white; text-decoration:none; padding:12px 24px; margin:12px; border-radius:5px; font-weight:bold; border:2px solid white;">Donate</a>
+        <a href="#" style="display:inline-block; background:transparent; color:white; text-decoration:none; padding:12px 24px; margin:8px; border-radius:5px; font-weight:bold; border:2px solid white;">Download for iOS</a>
+        <a href="#" style="display:inline-block; background:transparent; color:white; text-decoration:none; padding:12px 24px; margin:8px; border-radius:5px; font-weight:bold; border:2px solid white;">Download for Android</a>
+        <a href="#" style="display:inline-block; background:transparent; color:white; text-decoration:none; padding:12px 24px; margin:8px; border-radius:5px; font-weight:bold; border:2px solid white;">Donate</a>
       </div>
     </div>
   </div>
